@@ -1,0 +1,195 @@
+/* Variables */
+:root {
+    --color-primary: #0033a0;
+    --color-secondary: #0071ce;
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-dark-gray: #333333;
+    --color-light-gray: #cccccc;
+}
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 1vw 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5vw;
+}
+
+.header p {
+    font-size: 1.2vw;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 1vw;
+}
+
+.navbar a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 0.5vw 1vw;
+}
+
+.navbar a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+/* Main section styles */
+.main {
+    flex: 1;
+    padding: 2vw;
+}
+
+.section {
+    margin-bottom: 2vw;
+}
+
+.section h2 {
+    font-size: 2vw;
+    color: var(--color-primary);
+}
+
+.section p {
+    font-size: 1.2vw;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1vw 0;
+}
+
+/* Partner section styles */
+.partner-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 2vw 0;
+}
+
+.partner-logo {
+    width: 15vw;
+    margin-right: 1vw;
+    flex: 0 0 auto;
+}
+
+.partner-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Hides scrollbar for IE, Edge, and Firefox */
+.partner-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--color-dark-gray);
+    padding: 2vw 0;
+    color: var(--color-light);
+    text-align: center;
+    font-size: 1.2vw;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-section {
+    margin: 1vw;
+    flex: 1 1 30%;
+}
+
+.footer-section h3 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1vw;
+    color: var(--color-light);
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 4vw;
+    }
+
+    .header p, .navbar a {
+        font-size: 2vw;
+    }
+
+    .section h2 {
+        font-size: 3vw;
+    }
+
+    .section p {
+        font-size: 1.8vw;
+    }
+
+    .footer {
+        font-size: 2vw;
+    }
+
+    .footer-section h3 {
+        font-size: 2.5vw;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 1.5vw;
+    }
+}
+
+
+

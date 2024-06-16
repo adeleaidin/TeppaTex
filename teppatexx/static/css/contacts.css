@@ -1,0 +1,126 @@
+/* Define color variables if not already defined */
+:root {
+    --color-light-blue: #abcdef;
+    --color-light: #ffffff;
+    --color-light-gray: #f0f0f0;
+    --color-for-border: #000000;
+}
+
+/* General container styles */
+.container {
+    margin: 2vh 2vw; /* Adjust margins as needed */
+    padding: 2vw;
+    background-color: var(--color-light-blue);
+    border-radius: 6vw;
+}
+
+/* Title styles */
+.title {
+    font-size: 3vw;
+    margin-bottom: 5vh; /* Adjust spacing */
+    color: var(--color-light);
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Content grid */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 2.5vw;
+    color: var(--color-light);
+}
+
+/* Contact box styles */
+.contacts {
+    padding: 1vw;
+    border-radius: 2.5vw;
+    background-color: var(--color-light-gray);
+}
+
+/* Contact type styles */
+.type-contacts {
+    font-size: 1.5vw; /* Adjust font size */
+    font-weight: 600;
+    background-color: rgba(172, 172, 172, 0.3);
+    border-radius: 1.2vw;
+    padding: 0.7vw;
+    color: var(--color-for-border);
+}
+
+/* Contact elements grid */
+.elements_contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 0.5vw;
+}
+
+/* Individual contact element styles */
+.element-contacts {
+    font-size: 1.2vw;
+    margin: 0;
+    background-color: rgba(172, 172, 172, 0.1);
+    border-radius: 1.2vw;
+    padding: 1vw;
+    font-weight: 600;
+    color: var(--color-for-border);
+}
+
+/* Gradient backgrounds */
+.grad0 {
+    background: linear-gradient(to top, #062966, #698284);
+}
+
+.grad1 {
+    background: linear-gradient(to bottom, #278251, #3c2b77);
+}
+
+.grad2 {
+    background: linear-gradient(to bottom, #2e4d04, #264c76);
+}
+
+.grad3 {
+    background: linear-gradient(to top, #31286d, #224e63);
+}
+
+/* Responsive adjustments */
+@media (max-width: 920px) {
+    .title {
+        font-size: 6vw; /* Adjust font size */
+        margin-bottom: 3vh; /* Adjust spacing */
+    }
+    .content {
+        gap: 2vw;
+    }
+    .type-contacts {
+        font-size: 3vw; /* Adjust font size */
+    }
+    .element-contacts {
+        font-size: 2vw; /* Adjust font size */
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 5vh 5vw; /* Adjust margins */
+    }
+    .title {
+        font-size: 8vw; /* Adjust font size */
+    }
+    .content {
+        grid-template-columns: minmax(200px, 1fr); /* Adjust grid columns */
+        gap: 2vw;
+    }
+    .type-contacts {
+        font-size: 4vw; /* Adjust font size */
+    }
+    .element-contacts {
+        font-size: 3vw; /* Adjust font size */
+    }
+}
+
+@media (max-width: 450px) {
+    .elements_contacts {
+        grid-template-columns: minmax(200px, 1fr); /* Adjust grid columns */
+    }
+}

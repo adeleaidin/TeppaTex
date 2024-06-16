@@ -1,0 +1,27 @@
+function nav_main(hrf) {
+ let nav_content=["Преподаватели","Дисциплины","Материалы","Студентам","Абитуриентам","Наука","Контакты"];
+ let nav_folder=["teachers","disciplines","materials","students","abitur","science","contacts"];
+ let n,i;
+ n=nav_content.length;
+
+ document.write('<div class="nav-scroller">');
+ document.write('<nav class="nav-scroller__items dragscroll">');
+
+ if(hrf=="main") {
+   document.write('<a href="#" class="nav-scroller__item nav-scroller__item_active">Главная</a>');
+ }
+ else {
+  document.write('<a href="/" class="nav-scroller__item">Главная</a>');
+ }
+
+ for(i=0;i<n;i++) {
+    if(hrf==nav_folder[i]) {
+      document.write('<a href="#" class="nav-scroller__item nav-scroller__item_active">'+nav_content[i]+'</a>');
+   }
+    else {
+          document.write('<a href=/'+nav_folder[i]+' class="nav-scroller__item">'+nav_content[i]+'</a>');
+    }
+ document.write('</nav>');
+ document.write('</div>');
+ }
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модели</title>
+    <link rel="stylesheet" href="{% static 'css/models.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.geely.com/" class="header-logo">
+            <img class="header-logo-image" src="{% static 'images/logo.png' %}" alt="Geely" loading="lazy"/>
+        </a>
+        <script src="{% static 'scripts/nav.js' %}"></script>
+        <script>nav_main("models");</script>
+        <div class="lang-contant parent-element"></div>
+    </header>
+    <div class="container">
+        <h1 class="title">Модели Geely</h1>
+        <div class="model-list">
+            <div class="model-item">
+                <img src="{% static 'images/models/monjaro.png' %}" alt="Geely Atlas" class="model-image">
+                <p class="model-name">Geely Atlas</p>
+            </div>
+            <div class="model-item">
+                <img src="{% static 'images/models/new_coolray.png' %}" alt="Geely Coolray" class="model-image">
+                <p class="model-name">Geely Coolray</p>
+            </div>
+            <div class="model-item">
+                <img src="{% static 'images/models/starray.png' %}" alt="Geely Emgrand" class="model-image">
+                <p class="model-name">Geely Emgrand</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

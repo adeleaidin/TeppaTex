@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.geely.com/" class="header-logo">
+            <img
+                class="header-logo-image"
+                src="{% static 'images/logo.png' %}"
+                alt="Geely"
+                width="40"
+                height="40"
+                loading="lazy"
+            />
+        </a>
+        <script src="{% static 'scripts/nav.js' %}"></script>
+        <script>nav_main("contacts");</script>
+        <div class="lang-contant parent-element"></div>
+    </header>
+    <div class="container">
+        <p class="title">Контакты</p>
+        <div class="content">
+            <div class="discipline grad2">
+                <div class="elements_discipline">
+                    <p class="element-discipline">
+                        Geely Россия
+                        <a href="https://www.geely.com/" class="header-logo">
+                            <img class="header-logo-image" src="{% static 'images/logo.png' %}" alt="Geely" width="40" height="40" loading="lazy"/>
+                        </a>
+                    <p class="element-discipline">Email: info@geely.ru</p>
+                    <p class="element-discipline">Горячая линия 8-800-777-9999</p>
+                    <p class="element-discipline">Адрес: Москва, Тверская 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

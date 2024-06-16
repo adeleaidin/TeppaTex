@@ -1,0 +1,95 @@
+/* models.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: #fff;
+}
+
+.header-logo-image {
+    width: 10vw;
+    height: auto;
+}
+
+.container {
+    padding: 4vw;
+    text-align: center;
+}
+
+.title {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+}
+
+.model-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model-item {
+    margin: 2vw;
+    padding: 2vw;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2vw;
+    width: 20vw;
+}
+
+.model-image {
+    width: 100%;
+    height: auto;
+    border-radius: 2vw;
+}
+
+.model-name {
+    margin-top: 2vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-logo-image {
+        width: 15vw;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .model-item {
+        width: 40vw;
+    }
+
+    .model-name {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 6vw;
+    }
+
+    .model-item {
+        width: 80vw;
+    }
+
+    .model-name {
+        font-size: 4vw;
+    }
+}
